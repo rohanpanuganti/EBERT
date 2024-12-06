@@ -1,0 +1,1128 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>EBERT</title>
+	<meta charset="UTF-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<style>
+		body {
+			background-color: #f30003;
+			opacity: 0;
+			visibility: hidden;
+			transition:
+				opacity 0.2s ease 0.2s,
+				visibility 0.2s ease 0.2s;
+		}
+
+		.loaded body {
+			opacity: 1;
+			visibility: visible;
+		}
+	</style>
+	<link rel="stylesheet" href="css/style.min.css" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel="stylesheet" href="css/moonbounce.css" />
+	<link rel="stylesheet" href="css/moonbounce-new.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<script type="module">
+		import React from 'https://esm.sh/react@18';
+		import ReactDOM from 'https://esm.sh/react-dom@18';
+		window.React = React;
+		window.ReactDOM = ReactDOM;
+	</script>
+	<!--script src="/react-shim.js"></script-->
+	<script type="module" src="dist/wallet-connect.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@walletconnect/web3-provider@1.7.1/dist/umd/index.min.js"></script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="menu-open-bg"></div>
+		<div class="start-animation">
+			<button id="enter">
+				<span>ENTER</span>
+			</button>
+		</div>
+		<header class="header">
+			<div class="header__container">
+				<div class="header__logo-box">
+					<a href="index.html" class="header__logo"><img src="img/Logo.svg" alt="" /></a>
+				</div>
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a href="index.html#" data-goto=".roadmap" data-goto-top="80"
+									class="menu__link">Roadmap</a>
+							</li>
+							<li class="menu__item">
+								<img src="img/slash.svg" alt="Icon" />
+							</li>
+							<li class="menu__item">
+								<a href="index.html#" data-goto=".tokenomics" data-goto-top="120"
+									class="menu__link">Tokenomics</a>
+							</li>
+							<li class="menu__item">
+								<img src="img/slash.svg" alt="Icon" />
+							</li>
+							<li class="menu__item">
+								<a target="_blank"
+									href="https://dexscreener.com/base/0x1a02a0cc19d703ccd40c2fc63684dff89b52eeee"
+									class="menu__link">Chart</a>
+							</li>
+							<li class="menu__item">
+								<img src="img/slash.svg" alt="Icon" />
+							</li>
+							<li class="menu__item">
+								<a target="_blank"
+									href="https://white-glad-hare-157.mypinata.cloud/ipfs/QmNxm2GBqL21CS5fPLCxEZWVXmtM12YuakBdJ7Zva4GxE4"
+									class="menu__link">OrangePaper</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__actions" data-da=".menu__body, 991.98">
+					<div class="header__social">
+						<a target="_blank" href="https://t.me/whoisebert" class="header__social-item">
+							<img src="img/tel.svg" alt="Telegram" />
+						</a>
+						<a target="_blank" href="https://warpcast.com/ebert" class="header__social-item">
+							<img src="img/w.svg" alt="Warpcast" />
+						</a>
+						<a target="_blank" href="https://x.com/whoisebert" class="header__social-item">
+							<img src="img/x.svg" alt="X" />
+						</a>
+					</div>
+					<button class="header__button" id="wallet-connect">Connect Wallet</button>
+				</div>
+			</div>
+		</header>
+
+		<main class="page">
+			<section class="page__hero hero">
+				<div class="hero__container">
+					<div class="hero__decor">
+						<div class="hero__decor-item1">
+							<img src="img/hero/decor/d1.png" alt="" />
+						</div>
+						<div class="hero__decor-item2">
+							<img src="img/hero/decor/dl2.svg" alt="Decor" />
+						</div>
+						<div class="hero__decor-item3 video-func" data-src="img/hero/decor/d2."></div>
+						<div class="hero__decor-item4">
+							<img src="img/hero/decor/d2.png" alt="" />
+						</div>
+					</div>
+					<div class="hero__title video-func" data-src="img/hero/smoke.">
+						<img src="img/hero/Logo.png" alt="Image" />
+					</div>
+					<div class="hero__body">
+						<div class="hero__left">
+							<p>
+								The enigmatic being of Base Chain, growing and blazing a new
+								path for creatives in crypto
+							</p>
+							<a target="_blank"
+								href="https://app.uniswap.org/swap?outputCurrency=0xf83cde146AC35E99dd61b6448f7aD9a4534133cc&chain=base">
+								Buy Now!
+							</a>
+						</div>
+						<div class="hero__image video-func" data-src="img/hero/main."></div>
+						<div class="hero__right">
+							<a target="_blank"
+								href="https://birdeye.so/token/0xf83cde146AC35E99dd61b6448f7aD9a4534133cc?chain=base"
+								class="hero__right-item">
+								<img src="img/01.svg" alt="Logo" />
+							</a>
+							<a target="_blank"
+								href="https://www.dextools.io/app/en/base/pair-explorer/0x1a02a0cc19d703ccd40c2fc63684dff89b52eeee?t=1721713985649"
+								class="hero__right-item">
+								<img src="img/02.svg" alt="Logo" />
+							</a>
+							<a target="_blank"
+								href="https://dexscreener.com/base/0x1a02a0cc19d703ccd40c2fc63684dff89b52eeee"
+								class="hero__right-item">
+								<img src="img/03.svg" alt="Logo" />
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__about about">
+				<div class="about__header" data-watch-threshold="0.6" data-watch-once data-watch>
+					<div class="about__header-row pl-func">
+						<h2 class="about__header-title title">
+							<span>01/ About:</span>
+							<span>Who’s Ebert?</span>
+						</h2>
+						<span>
+							<img loading="lazy" src="img/about/span1.png" alt="Image" />
+						</span>
+					</div>
+					<div class="about__header-row">
+						<span>
+							<img src="img/about/span2.png" alt="Image" />
+							<i>Where imagination <br />
+								meets innovation, <br />
+								only on ​BASE!</i>
+						</span>
+					</div>
+					<div class="about__header-row pr-func">
+						<span>
+							<img loading="lazy" src="img/about/span3.png" alt="Image" />
+							<i>Ebert is <br />
+								more than <br />
+								just a token</i>
+							<i>He’s a mysterious being from outer space with a captivating
+								backstory and a vibrant future!</i>
+						</span>
+					</div>
+				</div>
+				<div class="about__body pr-func">
+					<div class="about__image video-func" data-watch-threshold="0.6" data-watch-once data-watch
+						data-src="img/about/01."></div>
+					<div class="about__items">
+						<div class="about__item item-about" data-watch-threshold="0.7" data-watch-once data-watch>
+							<div class="item-about__header">
+								<h3 class="item-about__title">
+									cosmic <br />
+									custodians
+								</h3>
+								<div class="item-about__number">
+									<span>01</span>
+									<img loading="lazy" src="img/about/arrow.svg" alt="Arrow" />
+								</div>
+							</div>
+							<p class="item-about__text">
+								Holders of the $EBERT token become more than just investors;
+								they become custodians of actual intellectual property within
+								the project.
+							</p>
+						</div>
+						<div class="about__item item-about" data-watch-threshold="0.7" data-watch-once data-watch>
+							<div class="item-about__header">
+								<h3 class="item-about__title">
+									All <br />
+									crafts rise
+								</h3>
+								<div class="item-about__number">
+									<span>02</span>
+									<img src="img/about/arrow.svg" alt="Arrow" />
+								</div>
+							</div>
+							<p class="item-about__text">
+								As the Ebert project evolves, so too does the potential for
+								revenue sharing. Holders of the $EBERT token will benefit from
+								a share of the project's earnings, crystallizing their
+								investment as the project gains momentum and popularity.
+							</p>
+						</div>
+						<div class="about__item item-about" data-watch-threshold="0.7" data-watch-once data-watch>
+							<div class="item-about__header">
+								<h3 class="item-about__title">
+									OTHERWORLDLY <br />
+									FRENS
+								</h3>
+								<div class="item-about__number">
+									<span>03</span>
+									<img src="img/about/arrow.svg" alt="Arrow" />
+								</div>
+							</div>
+							<p class="item-about__text">
+								Ebert isn’t the only character in this saga. The ecosystem
+								expands to all sorts of otherworldly beings. More characters
+								will begin to appear as more Ebert content comes out. It
+								honestly never ends…
+							</p>
+						</div>
+						<div class="about__item item-about" data-watch-threshold="0.7" data-watch-once data-watch>
+							<div class="item-about__header">
+								<h3 class="item-about__title">
+									onwards <br />
+									Upwards
+								</h3>
+								<div class="item-about__number">
+									<span>04</span>
+									<img src="img/about/arrow.svg" alt="Arrow" />
+								</div>
+							</div>
+							<p class="item-about__text">
+								Join us on this whimsical odyssey as we unlock the mysteries
+								of Ebert's origin and chart new territories in the digital
+								universe.
+							</p>
+						</div>
+					</div>
+					<div class="about__decor-item1 l-func">
+						<img src="img/hero/decor/d3.png" alt="Image" />
+					</div>
+				</div>
+			</section>
+			<section class="page__roadmap roadmap" data-watch="navigator">
+				<div class="roadmap__bg" data-prlx-parent>
+					<img loading="lazy" data-prlx src="img/roadmap/bg.png" alt="Image" />
+				</div>
+				<div class="roadmap__container">
+					<div class="roadmap__container-bg video-func" data-src="img/roadmap/01."></div>
+					<div class="roadmap__image video-func" data-src="img/roadmap/01."
+						data-da=".roadmap__row--1, 991.98, 1"></div>
+					<div class="roadmap__body">
+						<div class="roadmap__row roadmap__row--1">
+							<h2 class="roadmap__title title">
+								<span>02/ Roadmap:</span>
+								<span>Journey!</span>
+							</h2>
+							<div class="roadmap__item item-roadmap" data-watch-threshold="0.7" data-watch-once
+								data-watch>
+								<div class="item-roadmap__number">
+									<span>01</span>
+									<img src="img/roadmap/arrow.svg" alt="Arrow" />
+								</div>
+								<div class="item-roadmap__body">
+									<h3 class="item-roadmap__title">
+										TOKEN <br />
+										LAUNCH ON BASE
+									</h3>
+									<p class="item-roadmap__text">
+										We launched the $EBERT token on June 16, 2024. We’re proud
+										to be part of a growing ecosystem on Base.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="roadmap__row">
+							<div class="roadmap__item item-roadmap" data-watch-threshold="0.7" data-watch-once
+								data-watch>
+								<div class="item-roadmap__number">
+									<span>02</span>
+									<img src="img/roadmap/arrow.svg" alt="Arrow" />
+								</div>
+								<div class="item-roadmap__body">
+									<h3 class="item-roadmap__title">
+										DECRYPTED <br />
+										PORTRAITS
+									</h3>
+									<p class="item-roadmap__text">
+										A moment frozen in time. 111 of the first Ebert concept
+										sketches available now on OpenSea.
+									</p>
+									<a target="_blank" href="https://opensea.io/collection/ebert-s-decrypted-portraits"
+										class="item-roadmap__link">
+										<img src="img/roadmap/arrow.svg" alt="Arrow" />
+										<span>Check out the collection here!</span>
+										<img src="img/roadmap/arrow.svg" alt="Arrow" />
+									</a>
+								</div>
+							</div>
+							<div class="roadmap__item item-roadmap" data-watch-threshold="0.7" data-watch-once
+								data-watch>
+								<div class="item-roadmap__number">
+									<span>03</span>
+									<img src="img/roadmap/arrow.svg" alt="Arrow" />
+								</div>
+								<div class="item-roadmap__body">
+									<h3 class="item-roadmap__title">
+										DIMENSIONAL <br />
+										EXPANSION
+									</h3>
+									<p class="item-roadmap__text">
+										As the Ebert community evolves, so too will the content we
+										create. Stronger animations and stories will begin to
+										arise, helping us share more of Ebert’s visions and
+										downloads.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="roadmap__row">
+							<div class="roadmap__item item-roadmap" data-watch-threshold="0.7" data-watch-once
+								data-watch>
+								<div class="item-roadmap__number">
+									<span>04</span>
+									<img src="img/roadmap/arrow.svg" alt="Arrow" />
+								</div>
+								<div class="item-roadmap__body">
+									<h3 class="item-roadmap__title">FIRST CONTACT</h3>
+									<p class="item-roadmap__text">
+										We may shape-shift some of Ebert’s content into 1-off NFT
+										collections along this cosmic journey. $EBERT holders will
+										always have early Bert access to these installments.
+									</p>
+								</div>
+							</div>
+							<div class="roadmap__item item-roadmap" data-watch-threshold="0.7" data-watch-once
+								data-watch>
+								<div class="item-roadmap__number">
+									<span>05</span>
+									<img src="img/roadmap/arrow.svg" alt="Arrow" />
+								</div>
+								<div class="item-roadmap__body">
+									<h3 class="item-roadmap__title">FRENS</h3>
+									<p class="item-roadmap__text">
+										We see strong brand partnerships, high level content
+										production, and much more on the horizon for Ebert. We
+										will leverage the power of decentralisation to grant the
+										public access to owning their own piece of this character
+										and overall initiative.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="roadmap__row">
+							<div class="roadmap__item item-roadmap" data-watch-threshold="0.7" data-watch-once
+								data-watch>
+								<div class="item-roadmap__number">
+									<span>06</span>
+									<img src="img/roadmap/arrow.svg" alt="Arrow" />
+								</div>
+								<div class="item-roadmap__body">
+									<h3 class="item-roadmap__title">
+										EBERT IN <br />
+										THE 9TH DIMENSION
+									</h3>
+									<p class="item-roadmap__text">
+										Ebert’s episodic journey through the cosmos, backed and
+										crafted by industry professionals. Stay tuned for more to
+										come on this.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__tokenomics tokenomics" data-watch="navigator">
+				<div class="tokenomics__header" data-watch-threshold="0.7" data-watch-once data-watch>
+					<div class="tokenomics__header-row pl-func">
+						<h2 class="tokenomics__header-title title">
+							<span>03/ Decrypred</span>
+							<span>$EBRT</span>
+						</h2>
+						<span>
+							<img loading="lazy" src="img/tokenomics/span1.png" alt="Image" />
+						</span>
+					</div>
+					<div class="tokenomics__header-row">
+						<span>
+							<img loading="lazy" src="img/tokenomics/span2.png" alt="Image" />
+						</span>
+					</div>
+				</div>
+				<div class="tokenomics__info info-tokenomics">
+					<div class="info-tokenomics__container">
+						<div class="info-tokenomics__items" data-watch-threshold="1" data-watch-once data-watch>
+							<div class="info-tokenomics__item" data-watch-threshold="0.5" data-watch-once data-watch>
+								<div class="info-tokenomics__text">
+									contract: <br />
+									renounced
+								</div>
+								<img src="img/tokenomics/contract.svg" alt="Icon" />
+							</div>
+							<div class="info-tokenomics__item" data-watch-threshold="0.5" data-watch-once data-watch>
+								<div class="info-tokenomics__text">
+									Lp Locked: <br />
+									365 days
+								</div>
+								<img src="img/tokenomics/lock.svg" alt="Icon" />
+							</div>
+							<div class="info-tokenomics__item" data-watch-threshold="0.5" data-watch-once data-watch>
+								<div class="info-tokenomics__text">CA</div>
+								<div class="info-tokenomics__ca">
+									<img src="img/tokenomics/arrow.svg" alt="Icon" />
+									<span>0xf83cde146AC35E99dd61b6448f7aD9a4534133cc</span>
+									<img src="img/tokenomics/arrow.svg" alt="Icon" />
+								</div>
+								<button class="info-tokenomics__ca-copy copy-ca-btn">
+									<img src="img/tokenomics/copy.svg" alt="Icon" />
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tokenomics__body">
+					<div class="tokenomics__left left-tokenomics">
+						<div class="left-tokenomics__bg">
+							<img loading="lazy" src="img/tokenomics/main.png" alt="Image" />
+						</div>
+						<div class="left-tokenomics__slider swiper">
+							<div class="left-tokenomics__wrapper swiper-wrapper">
+								<div class="left-tokenomics__slide swiper-slide">70%</div>
+								<div class="left-tokenomics__slide swiper-slide">10%</div>
+								<div class="left-tokenomics__slide swiper-slide">10%</div>
+								<div class="left-tokenomics__slide swiper-slide">5%</div>
+								<div class="left-tokenomics__slide swiper-slide">5%</div>
+							</div>
+						</div>
+					</div>
+					<div class="tokenomics__right right-tokenomics">
+						<div class="right-tokenomics__bg">
+							<img loading="lazy" src="img/tokenomics/LightText.png" alt="Image" />
+						</div>
+						<div class="right-tokenomics__slider swiper">
+							<div class="right-tokenomics__wrapper swiper-wrapper">
+								<div class="right-tokenomics__slide swiper-slide">LP</div>
+								<div class="right-tokenomics__slide swiper-slide">
+									TREASURY
+								</div>
+								<div class="right-tokenomics__slide swiper-slide">CEX</div>
+								<div class="right-tokenomics__slide swiper-slide">DEV</div>
+								<div class="right-tokenomics__slide swiper-slide">
+									AIRDROP
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__moonbounce moonbounce moonbounce-v2">
+				<!-- Background -->
+				<div class="moonbounce__bg">
+					<img src="img/moonbounce/background.png" alt="Background" />
+				</div>
+
+				<!-- Stars parallax -->
+				<div class="moonbounce__stars">
+					<div class="moonbounce__stars-layer moonbounce__stars-layer--1"></div>
+					<div class="moonbounce__stars-layer moonbounce__stars-layer--2"></div>
+				</div>
+
+				<!-- Content -->
+				<div class="moonbounce__container">
+					<div class="moonbounce__content">
+						<!-- Convert each moonbounce__item to moonbounce__element with specific positioning -->
+						<img class="moonbounce__element moonbounce-v2__title"
+							src="img/moonbounce/we-bring-the-moon-to-us.png" alt="" />
+						<img class="moonbounce__element moonbounce-v2__mint-text" src="img/moonbounce/moon-mint.png"
+							alt="" />
+						<img class="moonbounce__element moonbounce-v2__actually" src="img/moonbounce/actually.png"
+							alt="" />
+						<img class="moonbounce__element moonbounce-v2__beamed-up"
+							src="img/moonbounce/what-we-beamed-up.png" alt="" />
+						<img class="moonbounce__element moonbounce-v2__moon-back"
+							src="img/moonbounce/what-the-moon-gave-us-back.png" alt="" />
+						<img class="moonbounce__element moonbounce-v2__bertnership"
+							src="img/moonbounce/in-bertnership-with.png" alt="" />
+						<img class="moonbounce__element moonbounce-v2__home" src="img/moonbounce/home-1.png" alt="" />
+						<img class="moonbounce__element moonbounce-v2__journey"
+							src="img/moonbounce/see-the-journey-onchain.png" alt="" />
+						<img class="moonbounce__element moonbounce-v2__sumerian" src="img/moonbounce/sumerian.png"
+							alt="" />
+						<img class="moonbounce__element moonbounce-v2__rtn" src="img/moonbounce/moonbounce-rtn.png"
+							alt="" />
+						<img class="moonbounce__element moonbounce-v2__manta" src="img/moonbounce/manta-crop.png"
+							alt="" />
+						<img class="moonbounce__element moonbounce-v2__main" src="img/moonbounce/main-comp.png"
+							alt="" />
+						<img class="moonbounce__element moonbounce-v2__flare" src="img/moonbounce/flare.png" alt="" />
+						<img class="moonbounce__element moonbounce-v2__arrow" src="img/moonbounce/down-arrow.png"
+							alt="" />
+						<img class="moonbounce__element moonbounce-v2__dish" src="img/moonbounce/dish.png" alt="" />
+						<img class="moonbounce__element moonbounce-v2__lightning"
+							src="img/moonbounce/dish-lightening.png" alt="" />
+						<img class="moonbounce__element moonbounce-v2__crescent" src="img/moonbounce/crescent-moon.png"
+							alt="" />
+						<img class="moonbounce__element moonbounce-v2__haze" src="img/moonbounce/blue-haze.png"
+							alt="" />
+						<img class="moonbounce__element moonbounce-v2__finger" src="img/moonbounce/big-finger-1.png"
+							alt="" />
+						<img class="moonbounce__element moonbounce-v2__free" src="img/moonbounce/all-mints-are-free.png"
+							alt="" />
+						<img class="moonbounce__element moonbounce-v2__yellow-mint"
+							src="img/moonbounce/yellow-mint-button.png" alt="" />
+						<a href="https://atrium.earth" target="_blank">
+							<img class="moonbounce__element moonbounce-v2__atrium" src="img/moonbounce/atrium-logo.png"
+								alt="Atrium" />
+						</a>
+						<img class="moonbounce__element moonbounce-v2__yellow-line-1"
+							src="img/moonbounce/yellow-line-1.png" alt="" />
+						<img class="moonbounce__element moonbounce-v2__yellow-line-2"
+							src="img/moonbounce/yellow-line-2.png" alt="" />
+						<img class="moonbounce__element moonbounce-v2__yellow-mint-now"
+							src="img/moonbounce/yellow-mint-now.png" alt="" />
+
+					</div>
+				</div>
+			</section>
+			<section class="page__portraits portraits">
+				<div class="portraits__bg">
+					<img loading="lazy" src="img/portraits/bg.svg" alt="Image" />
+				</div>
+				<div class="portraits__header" data-watch-threshold="0.7" data-watch-once data-watch>
+					<div class="portraits__header-row pl-func">
+						<h2 class="portraits__header-title title">
+							<span>04/</span>
+							<span>Decrypred</span>
+							<span>Portraits</span>
+						</h2>
+						<span>
+							<img loading="lazy" src="img/portraits/span1.png" alt="Image" />
+						</span>
+					</div>
+					<div class="portraits__header-row">
+						<span>
+							<img loading="lazy" src="img/portraits/span2.png" alt="Image" />
+						</span>
+					</div>
+				</div>
+				<div class="portraits__container" data-prlx-parent>
+					<div class="portraits__items" data-prlx>
+						<div class="portraits__item" data-watch-threshold="0.2" data-watch-once data-watch>
+							<img loading="lazy" src="img/portraits/items/01.jpg" alt="Image" />
+							<div class="portraits__item-info">
+								<img src="img/portraits/items/01.svg" alt="Image" />
+								<span>$EBERT [013481]</span>
+							</div>
+						</div>
+						<div class="portraits__item" data-watch-threshold="0.2" data-watch-once data-watch>
+							<img loading="lazy" src="img/portraits/items/02.jpg" alt="Image" />
+							<div class="portraits__item-info">
+								<img src="img/portraits/items/01.svg" alt="Image" />
+								<span>$EBERT [013481]</span>
+							</div>
+						</div>
+						<div class="portraits__item" data-watch-threshold="0.1" data-watch-once data-watch>
+							<img src="img/portraits/items/03.jpg" alt="Image" />
+							<div class="portraits__item-info">
+								<img src="img/portraits/items/01.svg" alt="Image" />
+								<span>$EBERT [013481]</span>
+							</div>
+						</div>
+						<div class="portraits__item" data-watch-threshold="0.2" data-watch-once data-watch>
+							<img loading="lazy" src="img/portraits/items/04.jpg" alt="Image" />
+							<div class="portraits__item-info">
+								<img src="img/portraits/items/01.svg" alt="Image" />
+								<span>$EBERT [013481]</span>
+							</div>
+						</div>
+						<div class="portraits__item" data-watch-threshold="0.2" data-watch-once data-watch>
+							<img loading="lazy" src="img/portraits/items/05.jpg" alt="Image" />
+							<div class="portraits__item-info">
+								<img src="img/portraits/items/01.svg" alt="Image" />
+								<span>$EBERT [013481]</span>
+							</div>
+						</div>
+					</div>
+					<a target="_blank" href="https://opensea.io/collection/ebert-s-decrypted-portraits"
+						class="portraits__link">
+						<img loading="lazy" src="img/portraits/play.svg" alt="Icon" />
+						<div>
+							<span>
+								VIEW FULL <br />
+								COLLECTION
+							</span>
+							<img src="img/portraits/arrow.svg" alt="Icon" />
+						</div>
+					</a>
+				</div>
+			</section>
+			<section class="page__book book">
+				<div class="book__bg" data-prlx-parent>
+					<img data-prlx src="img/book/bg.png" alt="Image" />
+				</div>
+				<div class="book__container">
+					<h2 class="book__title title">
+						<span>05/</span>
+						<span>Ebert 24’ Look book</span>
+					</h2>
+				</div>
+				<div class="book__slider-box">
+					<div class="book__slider swiper">
+						<div class="book__wrapper swiper-wrapper">
+							<div class="book__slide swiper-slide">
+								<img src="img/book/new/01.jpg" alt="Image" />
+							</div>
+							<div class="book__slide swiper-slide">
+								<img src="img/book/new/02.jpg" alt="Image" />
+							</div>
+							<div class="book__slide swiper-slide">
+								<img src="img/book/new/03.jpg" alt="Image" />
+							</div>
+							<div class="book__slide swiper-slide">
+								<img src="img/book/new/04.jpg" alt="Image" />
+							</div>
+							<div class="book__slide swiper-slide">
+								<img src="img/book/new/05.jpg" alt="Image" />
+							</div>
+							<div class="book__slide swiper-slide">
+								<img src="img/book/new/06.jpg" alt="Image" />
+							</div>
+							<div class="book__slide swiper-slide">
+								<img src="img/book/new/07.jpg" alt="Image" />
+							</div>
+							<div class="book__slide swiper-slide">
+								<img src="img/book/new/08.jpg" alt="Image" />
+							</div>
+							<div class="book__slide swiper-slide">
+								<img src="img/book/new/09.jpg" alt="Image" />
+							</div>
+							<div class="book__slide swiper-slide">
+								<img src="img/book/new/10.jpg" alt="Image" />
+							</div>
+							<div class="book__slide swiper-slide">
+								<img src="img/book/new/11.jpg" alt="Image" />
+							</div>
+							<div class="book__slide swiper-slide">
+								<img src="img/book/new/12.jpg" alt="Image" />
+							</div>
+							<div class="book__slide swiper-slide">
+								<img src="img/book/new/13.jpg" alt="Image" />
+							</div>
+							<div class="book__slide swiper-slide">
+								<img src="img/book/new/14.jpg" alt="Image" />
+							</div>
+						</div>
+						<div class="book__slider-navigation">
+							<button type="button" class="book__swiper-button-prev">
+								<svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33"
+									fill="none">
+									<path
+										d="M29.6428 14.678L9.1351 14.678L17.1003 6.7128L14.5975 4.20996L2.35938 16.448L14.5975 28.6861L17.1003 26.1833L9.1351 18.2181L29.6428 18.2181L29.6428 14.678Z"
+										fill="black" />
+								</svg>
+							</button>
+							<div class="book__swiper-pagination"></div>
+							<button type="button" class="book__swiper-button-next">
+								<svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33"
+									fill="none">
+									<path
+										d="M2.36498 14.678L22.8727 14.678L14.9075 6.7128L17.4104 4.20996L29.6484 16.448L17.4104 28.6861L14.9075 26.1833L22.8727 18.2181L2.36498 18.2181L2.36498 14.678Z"
+										fill="black" />
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+				<!-- <div class="book__slider-box">
+            <div class="book__slider swiper">
+              <div class="book__wrapper swiper-wrapper">
+                <div class="book__slide swiper-slide">
+                  <img src="img/book/EBERT_LB24'_v1-01.jpg" alt="Image" />
+                </div>
+                <div class="book__slide swiper-slide">
+                  <img src="img/book/EBERT_LB24'_v1-02.jpg" alt="Image" />
+                </div>
+                <div class="book__slide swiper-slide">
+                  <img src="img/book/EBERT_LB24'_v1-03.jpg" alt="Image" />
+                </div>
+                <div class="book__slide swiper-slide">
+                  <img src="img/book/EBERT_LB24'_v1-04.jpg" alt="Image" />
+                </div>
+                <div class="book__slide swiper-slide">
+                  <img src="img/book/EBERT_LB24'_v1-05.jpg" alt="Image" />
+                </div>
+                <div class="book__slide swiper-slide">
+                  <img src="img/book/EBERT_LB24'_v1-06.jpg" alt="Image" />
+                </div>
+                <div class="book__slide swiper-slide">
+                  <img src="img/book/EBERT_LB24'_v1-07.jpg" alt="Image" />
+                </div>
+                <div class="book__slide swiper-slide">
+                  <img src="img/book/EBERT_LB24'_v1-08.jpg" alt="Image" />
+                </div>
+                <div class="book__slide swiper-slide">
+                  <img src="img/book/EBERT_LB24'_v1-09.jpg" alt="Image" />
+                </div>
+                <div class="book__slide swiper-slide">
+                  <img src="img/book/EBERT_LB24'_v1-10.jpg" alt="Image" />
+                </div>
+                <div class="book__slide swiper-slide">
+                  <img src="img/book/EBERT_LB24'_v1-11.jpg" alt="Image" />
+                </div>
+                <div class="book__slide swiper-slide">
+                  <img src="img/book/EBERT_LB24'_v1-12.jpg" alt="Image" />
+                </div>
+                <div class="book__slide swiper-slide">
+                  <img src="img/book/EBERT_LB24'_v1-13.jpg" alt="Image" />
+                </div>
+                <div class="book__slide swiper-slide">
+                  <img src="img/book/EBERT_LB24'_v1-14.jpg" alt="Image" />
+                </div>
+              </div>
+              <div class="book__slider-navigation">
+                <button type="button" class="book__swiper-button-prev">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="33"
+                    viewBox="0 0 32 33"
+                    fill="none">
+                    <path
+                      d="M29.6428 14.678L9.1351 14.678L17.1003 6.7128L14.5975 4.20996L2.35938 16.448L14.5975 28.6861L17.1003 26.1833L9.1351 18.2181L29.6428 18.2181L29.6428 14.678Z"
+                      fill="black" />
+                  </svg>
+                </button>
+                <div class="book__swiper-pagination"></div>
+                <button type="button" class="book__swiper-button-next">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="33"
+                    viewBox="0 0 32 33"
+                    fill="none">
+                    <path
+                      d="M2.36498 14.678L22.8727 14.678L14.9075 6.7128L17.4104 4.20996L29.6484 16.448L17.4104 28.6861L14.9075 26.1833L22.8727 18.2181L2.36498 18.2181L2.36498 14.678Z"
+                      fill="black" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div> -->
+			</section>
+			<section class="page__package package" data-prlx-parent>
+				<i data-prlx></i>
+				<i data-prlx></i>
+				<div class="package__container">
+					<h2 class="package__title title">
+						<span>06/</span>
+						<span>Free Package</span>
+					</h2>
+					<div class="package__items-box">
+						<div class="package__items-body">
+							<i></i>
+							<i></i>
+							<i></i>
+							<i></i>
+							<h3 class="package__items-title">
+								<span>Ebert Free Downloads Package</span>
+								<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"
+									fill="none">
+									<path
+										d="M24 32L14 22L16.8 19.1L22 24.3V8H26V24.3L31.2 19.1L34 22L24 32ZM8 40V30H12V36H36V30H40V40H8Z"
+										fill="#FFF84A" />
+								</svg>
+							</h3>
+							<div class="package__items-items">
+								<div class="package__items-item">
+									<div class="package__items-item-image">
+										<img loading="lazy"
+											src="img/package/cards/DESKTOP%20BG/DBG_AS%20ABOVE%20SO%20BELOW.jpg"
+											alt="Image" />
+									</div>
+									<h5>DBG_AS ABOVE SO BELOW.jpg</h5>
+									<a href="img/package/download/DESKTOP%20BG/DBG_AS%20ABOVE%20SO%20BELOW.jpg"
+										download>
+										Download
+									</a>
+								</div>
+								<div class="package__items-item">
+									<div class="package__items-item-image">
+										<img loading="lazy" src="img/package/cards/DESKTOP%20BG/DBG_BASED%20BLUE.jpg"
+											alt="Image" />
+									</div>
+									<h5>DBG_BASED BLUE.jpg</h5>
+									<a href="img/package/download/DESKTOP%20BG/DBG_BASED%20BLUE.jpg" download>
+										Download
+									</a>
+								</div>
+								<div class="package__items-item">
+									<div class="package__items-item-image">
+										<img loading="lazy" src="img/package/cards/DESKTOP%20BG/DBG_BLANK%20BERT.jpg"
+											alt="Image" />
+									</div>
+									<h5>DBG_BLANK BERT.jpg</h5>
+									<a href="img/package/download/DESKTOP%20BG/DBG_BLANK%20BERT.jpg" download>
+										Download
+									</a>
+								</div>
+								<div class="package__items-item">
+									<div class="package__items-item-image">
+										<img loading="lazy" src="img/package/cards/DESKTOP%20BG/DBG_BUSY%20BERTS.jpg"
+											alt="Image" />
+									</div>
+									<h5>DBG_BUSY BERTS.jpg</h5>
+									<a href="img/package/download/DESKTOP%20BG/DBG_BUSY%20BERTS.jpg" download>
+										Download
+									</a>
+								</div>
+								<div class="package__items-item">
+									<div class="package__items-item-image">
+										<img loading="lazy"
+											src="img/package/cards/DESKTOP%20BG/DBG_CHAOTIC%20BEAUTY.jpg" alt="Image" />
+									</div>
+									<h5>DBG_CHAOTIC BEAUTY.jpg</h5>
+									<a href="img/package/download/DESKTOP%20BG/DBG_CHAOTIC%20BEAUTY.jpg" download>
+										Download
+									</a>
+								</div>
+								<div class="package__items-item">
+									<div class="package__items-item-image">
+										<img loading="lazy"
+											src="img/package/cards/DESKTOP%20BG/DBG_FROM%20THE%20DEEP.jpg"
+											alt="Image" />
+									</div>
+									<h5>DBG_FROM THE DEEP.jpg</h5>
+									<a href="img/package/download/DESKTOP%20BG/DBG_FROM%20THE%20DEEP.jpg" download>
+										Download
+									</a>
+								</div>
+								<div class="package__items-item">
+									<div class="package__items-item-image">
+										<img loading="lazy" src="img/package/cards/DESKTOP%20BG/DBG_HOME.jpg"
+											alt="Image" />
+									</div>
+									<h5>DBG_HOME.jpg</h5>
+									<a href="img/package/download/DESKTOP%20BG/DBG_HOME.jpg" download>
+										Download
+									</a>
+								</div>
+								<div class="package__items-item">
+									<div class="package__items-item-image">
+										<img loading="lazy" src="img/package/cards/DESKTOP%20BG/DBG_SNIFF.jpg"
+											alt="Image" />
+									</div>
+									<h5>DBG_SNIFF.jpg</h5>
+									<a href="/img/package/download/DESKTOP&#32;BG/DDBG_SNIFF.jpg" download>
+										Download
+									</a>
+								</div>
+								<div class="package__items-item">
+									<div class="package__items-item-image">
+										<img loading="lazy" src="img/package/cards/DESKTOP%20BG/DBG_TELOS.jpg"
+											alt="Image" />
+									</div>
+									<h5>DBG_TELOS.jpg</h5>
+									<a href="img/package/download/DESKTOP%20BG/DBG_TELOS.jpg" download>
+										Download
+									</a>
+								</div>
+								<div class="package__items-item">
+									<div class="package__items-item-image">
+										<img loading="lazy" src="img/package/cards/X%20BANNERS/XB_01.jpg" alt="Image" />
+									</div>
+									<h5>XB_01.jpg</h5>
+									<a href="img/package/download/X%20BANNERS/XB_01.jpg" download>
+										Download
+									</a>
+								</div>
+								<div class="package__items-item">
+									<div class="package__items-item-image">
+										<img loading="lazy" src="img/package/cards/X%20BANNERS/XB_02%20.jpg"
+											alt="Image" />
+									</div>
+									<h5>XB_02 .jpg</h5>
+									<a href="img/package/download/X%20BANNERS/XB_02%20.jpg" download>
+										Download
+									</a>
+								</div>
+								<div class="package__items-item">
+									<div class="package__items-item-image">
+										<img loading="lazy" src="img/package/cards/X%20BANNERS/XB_02.jpg" alt="Image" />
+									</div>
+									<h5>XB_02.jpg</h5>
+									<a href="img/package/download/X%20BANNERS/XB_02.jpg" download>
+										Download
+									</a>
+								</div>
+								<div class="package__items-item">
+									<div class="package__items-item-image">
+										<img loading="lazy" src="img/package/cards/X%20BANNERS/XB_03.jpg" alt="Image" />
+									</div>
+									<h5>XB_03.jpg</h5>
+									<a href="img/package/download/X%20BANNERS/XB_03.jpg" download>
+										Download
+									</a>
+								</div>
+								<div class="package__items-item">
+									<div class="package__items-item-image">
+										<img loading="lazy" src="img/package/cards/X%20BANNERS/XB_04.jpg" alt="Image" />
+									</div>
+									<h5>XB_04.jpg</h5>
+									<a href="img/package/download/X%20BANNERS/XB_04.jpg" download>
+										Download
+									</a>
+								</div>
+								<div class="package__items-item">
+									<div class="package__items-item-image">
+										<img loading="lazy" src="img/package/cards/X%20BANNERS/XB_05.jpg" alt="Image" />
+									</div>
+									<h5>XB_05.jpg</h5>
+									<a href="img/package/download/X%20BANNERS/XB_05.jpg" download>
+										Download
+									</a>
+								</div>
+								<div class="package__items-item">
+									<div class="package__items-item-image">
+										<img loading="lazy" src="img/package/cards/X%20BANNERS/XB_06.jpg" alt="Image" />
+									</div>
+									<h5>XB_06.jpg</h5>
+									<a href="img/package/download/X%20BANNERS/XB_06.jpg" download>
+										Download
+									</a>
+								</div>
+								<div class="package__items-item">
+									<div class="package__items-item-image">
+										<img loading="lazy" src="img/package/cards/X%20BANNERS/XB_07.jpg" alt="Image" />
+									</div>
+									<h5>XB_07.jpg</h5>
+									<a href="img/package/download/X%20BANNERS/XB_07.jpg" download>
+										Download
+									</a>
+								</div>
+								<div class="package__items-item">
+									<div class="package__items-item-image">
+										<img loading="lazy" src="img/package/cards/X%20BANNERS/XB_08.jpg" alt="Image" />
+									</div>
+									<h5>XB_08.jpg</h5>
+									<a href="img/package/download/X%20BANNERS/XB_08.jpg" download>
+										Download
+									</a>
+								</div>
+							</div>
+						</div>
+						<i></i>
+					</div>
+				</div>
+			</section>
+			<section class="page__video video">
+				<i></i>
+				<i></i>
+				<div class="video__header" data-watch-threshold="0.7" data-watch-once data-watch>
+					<div class="video__header-row pl-func">
+						<span>
+							<img loading="lazy" src="img/video/span1.png" alt="Image" />
+						</span>
+					</div>
+				</div>
+				<div class="video__container" data-prlx-parent>
+					<div class="video__video-box" data-prlx>
+						<button class="video__button">
+							<svg xmlns="http://www.w3.org/2000/svg" width="112" height="112" viewBox="0 0 112 112"
+								fill="none">
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M56 112C86.9279 112 112 86.9279 112 56C112 25.0721 86.9279 0 56 0C25.0721 0 0 25.0721 0 56C0 86.9279 25.0721 112 56 112ZM39.75 81.1147L84 56L39.75 30.8853L39.75 81.1147Z"
+									fill="#FFFE4D" />
+							</svg>
+						</button>
+						<video playsinline loop type="video/mp4" src="img/video/01.mp4"></video>
+					</div>
+				</div>
+			</section>
+			<section class="page__join join">
+				<div class="join__bg">
+					<img src="img/join/dec.svg" alt="Image" />
+					<img src="img/join/dec2.png" alt="Image" />
+					<img src="img/join/dec3.png" alt="Image" />
+					<img src="img/join/dec4.png" alt="Image" />
+					<img src="img/join/dec5.png" alt="Image" />
+					<img src="img/join/dec6.png" alt="Image" />
+				</div>
+				<div class="join__header" data-watch-threshold="0.45" data-watch-once data-watch>
+					<div class="join__header-row pl-func pr-func">
+						<h2 class="join__header-title title">
+							<span>07/</span>
+							<span>Where imagination</span>
+							<span>meets innovation,</span>
+							<span>only on ​BASE!</span>
+						</h2>
+						<span>
+							<img loading="lazy" src="img/join/span1.png" alt="Image" />
+						</span>
+					</div>
+					<div class="join__header-row">
+						<span>
+							<img loading="lazy" src="img/join/span4.png" alt="Image" /></span>
+					</div>
+					<div class="join__header-row">
+						<span>
+							<img loading="lazy" src="img/join/span5.png" alt="Image" /></span>
+					</div>
+					<div class="join__header-row">
+						<span class="video-func" data-src="img/join/01."><img loading="lazy" src="img/join/span6.png"
+								alt="Image" />
+						</span>
+					</div>
+				</div>
+				<div class="join__container">
+					<div class="join__items">
+						<a target="_blank"
+							href="https://dexscreener.com/base/0x1a02a0cc19d703ccd40c2fc63684dff89b52eeee"
+							class="join__item">
+							<img src="img/join/02.svg" alt="Icon" />
+							<img src="img/join/22.svg" alt="Icon" />
+						</a>
+						<a target="_blank"
+							href="https://www.dextools.io/app/en/base/pair-explorer/0x1a02a0cc19d703ccd40c2fc63684dff89b52eeee?t=1721713985649"
+							class="join__item">
+							<img src="img/join/01.svg" alt="Icon" />
+							<img src="img/join/11.svg" alt="Icon" />
+						</a>
+						<a target="_blank"
+							href="https://birdeye.so/token/0xf83cde146AC35E99dd61b6448f7aD9a4534133cc?chain=base"
+							class="join__item">
+							<img src="img/join/03.svg" alt="Icon" />
+							<img src="img/join/33.svg" alt="Icon" />
+						</a>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__body">
+				<div class="footer__container">
+					<div class="footer__top">
+						<div class="footer__column">
+							<p class="footer__text">
+								YOU CAN FIND US <br />
+								ON
+							</p>
+						</div>
+						<div class="footer__column">
+							<div class="footer__social">
+								<div class="footer__social-text">Social</div>
+								<div class="footer__social-items">
+									<a target="_blank" href="https://t.me/whoisebert" class="footer__social-item">
+										<img src="img/footer/tel.svg" alt="logo" />
+									</a>
+									<a target="_blank" href="https://x.com/whoisebert" class="footer__social-item">
+										<img src="img/footer/x.svg" alt="logo" />
+									</a>
+									<a target="_blank"
+										href="https://www.instagram.com/whoisebert_base?igsh=YWI0NWE4NWMyanpw"
+										class="footer__social-item">
+										<img src="img/footer/insta.svg" alt="logo" />
+									</a>
+									<a target="_blank" href="https://warpcast.com/ebert" class="footer__social-item">
+										<img src="img/footer/w.svg" alt="logo" />
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="footer__column">
+							<div class="footer__email">
+								<span class="footer__email-text">Email</span>
+								<a target="_blank" href="mailto:contact@whoisebert.xyz">contact@whoisebert.xyz</a>
+							</div>
+						</div>
+						<div class="footer__column">
+							<p class="footer__copy">
+								<span>EBERT © ALL RIGHTS RESERVED</span>
+								<span>2024</span>
+							</p>
+						</div>
+					</div>
+					<a target="_blank" href="https://t.me/osnovoco" class="footer__osnovo">
+						<img src="img/osnovo.svg" alt="Logo" />
+					</a>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js"></script>
+	<script type="module" src="dist/wallet-connect.min.js"></script>
+	<script>
+		// Disable SES lockdown warnings
+		window.LOCKDOWN_DEBUG = false;
+	</script>
+	<script>
+		// Add global error handler
+		window.onerror = function (msg, url, lineNo, columnNo, error) {
+			console.error('Global error:', { msg, url, lineNo, columnNo, error });
+			return false;
+		};
+	</script>
+</body>
+
+</html>

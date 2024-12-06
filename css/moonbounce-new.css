@@ -1,0 +1,1492 @@
+/* Root variables for scaling */
+:root {
+    --scale-factor: 1;
+    --container-height: 1500px;
+    --base-unit: 1vw;
+}
+
+/* Base Container with Grid */
+.moonbounce-v2 {
+    position: relative;
+    width: 100%;
+    min-height: var(--container-height);
+    overflow: hidden;
+}
+
+/* Grid container should be on the content div */
+.moonbounce-v2 .moonbounce__content {
+    display: grid;
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-columns: repeat(12, 1fr);
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* Base styles for journey */
+.moonbounce__element.moonbounce-v2__journey {
+    grid-row: 11 / 12;
+    grid-column: 3 / 11;
+    justify-self: center;
+    align-self: end;
+    width: 80vw;
+    z-index: 2;
+    margin-bottom: -13vh;
+}
+
+/* Base styles for atrium */
+.moonbounce__element.moonbounce-v2__atrium,
+a:has(.moonbounce-v2__atrium) {
+    grid-column: 10 / 12;
+    justify-self: end;
+    margin-right: 10vw;
+    width: 60%;
+    margin-bottom: -55vh;
+    margin-right: 12vw;
+}
+
+/* Base styles for bertnership */
+.moonbounce__element.moonbounce-v2__bertnership {
+    grid-column: 6 / 12;
+    grid-row: 10 / 11;
+    justify-self: end;
+    align-self: end;
+    width: 65%;
+    margin-bottom: -45vh;
+    margin-right: 17vw;
+    z-index: 2;
+}
+
+/* Base styles for RTN */
+.moonbounce__element.moonbounce-v2__rtn {
+    grid-row: 8 / 10;
+    grid-column: 2 / 6;
+    justify-self: start;
+    align-self: end;
+    width: 90%;
+    margin-bottom: -60vh;
+    margin-left: -5vw;
+    z-index: 2;
+}
+
+/* Base styles for yellow line 1 */
+.moonbounce__element.moonbounce-v2__yellow-line-1 {
+    grid-row: 8 / 10;
+    grid-column: 2 / 6;
+    justify-self: start;
+    align-self: end;
+    width: 90%;
+    margin-bottom: -60vh;
+    margin-left: -5vw;
+    z-index: 2;
+}
+
+/* Base styles for yellow line 2 */
+.moonbounce__element.moonbounce-v2__yellow-line-2 {
+    grid-row: 8 / 10;
+    grid-column: 2 / 6;
+    justify-self: start;
+    align-self: end;
+    width: 90%;
+    margin-bottom: -60vh;
+    margin-left: -5vw;
+    z-index: 2;
+}
+
+/* Base styles for home PNG */
+.moonbounce__element.moonbounce-v2__home {
+    grid-row: 8 / 10;
+    grid-column: 2 / 6;
+    justify-self: start;
+    align-self: end;
+    width: 90%;
+    margin-bottom: -60vh;
+    margin-left: -5vw;
+    z-index: 2;
+}
+
+/* Base styles for moon-back */
+.moonbounce__element.moonbounce-v2__moon-back {
+    grid-row: 7 / 8;
+    grid-column: 2 / 6;
+    justify-self: start;
+    align-self: end;
+    width: 95%;
+    margin-bottom: -50vh;
+    margin-left: -5vw;
+    z-index: 2;
+}
+
+/* Base styles for beamed-up */
+.moonbounce__element.moonbounce-v2__beamed-up {
+    grid-row: 7 / 8;
+    grid-column: 2 / 6;
+    justify-self: start;
+    align-self: end;
+    width: 90%;
+    margin-bottom: -13.7vh;
+    margin-left: -5vw;
+    z-index: 2;
+}
+
+/* Base styles for main */
+.moonbounce__element.moonbounce-v2__main {
+    grid-row: 5 / 7;
+    grid-column: 1 / 13;
+    justify-self: center;
+    align-self: center;
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 10vh;
+    z-index: 3;
+    transform: scale(1.2);
+    transform-origin: center;
+}
+
+/* Base styles for haze */
+.moonbounce__element.moonbounce-v2__haze {
+    grid-row: 12 / 13;
+    grid-column: 1 / 14;
+    justify-self: center;
+    align-self: end;
+    width: 100%;
+    margin-bottom: 0;
+    z-index: 1;
+    transform: scale(1.1);
+}
+
+/* Base styles for flare */
+.moonbounce__element.moonbounce-v2__flare {
+    grid-row: 9 / 11;
+    grid-column: 6 / 12;
+    justify-self: center;
+    align-self: start;
+    width: 100%;
+    margin-right: -24vw;
+    z-index: 2;
+    transform: translateY(0px);
+}
+
+/* Base styles for free */
+.moonbounce__element.moonbounce-v2__free {
+    grid-row: 9 / 11;
+    grid-column: 6 / 12;
+    justify-self: center;
+    align-self: start;
+    width: 50%;
+    margin-right: -24vw;
+    z-index: 3;
+    transform: translateY(112px);
+}
+
+/* Base styles for crescent */
+.moonbounce__element.moonbounce-v2__crescent {
+    grid-row: 9 / 11;
+    grid-column: 6 / 12;
+    justify-self: center;
+    align-self: start;
+    width: 100%;
+    margin-right: -30vw;
+    z-index: 4;
+    transform: translateY(-110px);
+}
+
+/* Base styles for manta */
+.moonbounce__element.moonbounce-v2__manta {
+    grid-row: 10 / 12;
+    grid-column: 5 / 11;
+    justify-self: center;
+    align-self: center;
+    width: 45%;
+    transform: translateY(-510px);
+}
+
+/* Base styles for dish */
+.moonbounce__element.moonbounce-v2__dish {
+    grid-row: 5 / 7;
+    grid-column: 1 / 13;
+    justify-self: center;
+    align-self: center;
+    width: 10%;
+    z-index: 4;
+    transform: translateY(20px);
+}
+
+/* Base styles for lightning */
+.moonbounce__element.moonbounce-v2__lightning {
+    grid-row: 5 / 7;
+    grid-column: 1 / 13;
+    justify-self: center;
+    align-self: center;
+    width: 18%;
+    z-index: 5;
+    transform: translateY(20px);
+}
+
+/* Base style for actually */
+.moonbounce__element.moonbounce-v2__actually {
+    grid-row: 5 / 7;
+    grid-column: 1 / 13;
+    justify-self: center;
+    align-self: center;
+    width: 18%;
+    z-index: 5;
+    transform: translateY(-80px);
+}
+
+/* Base style for arrow */
+.moonbounce__element.moonbounce-v2__arrow {
+    grid-row: 5 / 7;
+    grid-column: 1 / 13;
+    justify-self: center;
+    align-self: center;
+    width: 18%;
+    z-index: 5;
+    transform: translateY(-80px);
+}
+
+/* Base style for title */
+.moonbounce__element.moonbounce-v2__title {
+    grid-row: 1 / 3;
+    grid-column: 1 / 7;
+    justify-self: start;
+    align-self: start;
+    width: 80%;
+    z-index: 3;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+/* Base style for sumerian (right side) */
+.moonbounce__element.moonbounce-v2__sumerian {
+    grid-row: 2 / 4;
+    grid-column: 8 / 13;
+    justify-self: end;
+    align-self: start;
+    width: 40%;
+    z-index: 3;
+    margin-right: 20px;
+}
+
+/* Base style for finger */
+.moonbounce__element.moonbounce-v2__finger {
+    grid-row: 2 / 4;
+    grid-column: 1 / 6;
+    justify-self: start;
+    align-self: start;
+    width: 50%;
+    z-index: 3;
+    margin-left: 20px;
+}
+
+/* Base style for yellow mint */
+.moonbounce__element.moonbounce-v2__yellow-mint {
+    grid-row: 2 / 4;
+    grid-column: 7 / 12;
+    justify-self: end;
+    align-self: start;
+    width: 35%;
+    z-index: 3;
+    margin-right: 20px;
+}
+
+/* Base hover styles for yellow-mint */
+.moonbounce__element.moonbounce-v2__yellow-mint {
+    transition: all 0.4s ease;
+    cursor: pointer;
+    filter: brightness(1) drop-shadow(0 0 0 rgba(255, 255, 150, 0));
+}
+
+.moonbounce__element.moonbounce-v2__yellow-mint:hover {
+    transform: translateY(-5px);
+    filter: brightness(1.3) drop-shadow(0 0 15px rgba(255, 255, 150, 0.5));
+}
+
+/* Media queries */
+@media screen and (min-width: 480px) {
+    :root {
+        --scale-factor: 1.1;
+        --container-height: 1600px;
+    }
+    
+    .moonbounce__element.moonbounce-v2__journey {
+        width: 80vw;
+        grid-column: 3 / 11;
+        margin-bottom: -13vh;
+    }
+
+    .moonbounce__element.moonbounce-v2__atrium,
+    a:has(.moonbounce-v2__atrium) {
+        grid-column: 10 / 12;
+        justify-self: end;
+        margin-right: 10vw;
+        width: 60%;
+        margin-bottom: -55vh;
+        margin-right: 12vw;
+    }
+    
+    .moonbounce__element.moonbounce-v2__bertnership {
+        grid-column: 6 / 12;
+        width: 95%;
+        margin-bottom: -28vh;
+        margin-right: 18vw;
+    }
+
+    .moonbounce__element.moonbounce-v2__rtn {
+        grid-column: 2 / 9;
+        width: 100%;
+        margin-bottom: -40vh;
+        margin-left: -10vw;
+    }
+
+    .moonbounce__element.moonbounce-v2__yellow-line-1 {
+        grid-column: 2 / 8;
+        width: 100%;
+        margin-bottom: 21.5vh;
+        margin-left: -5vw;
+    }
+
+    .moonbounce__element.moonbounce-v2__yellow-line-2 {
+        grid-column: 2 / 8;
+        width: 100%;
+        margin-bottom: -10vh;
+        margin-left: -5vw;
+    }
+
+    .moonbounce__element.moonbounce-v2__home {
+        grid-column: 2 / 8;
+        width: 95%;
+        margin-bottom: -5vh;
+        margin-left: -5vw;
+    }
+
+    .moonbounce__element.moonbounce-v2__beamed-up {
+        grid-column: 2 / 8;
+        width: 100%;
+        margin-bottom: -14.7vh;
+        margin-left: -5vw;
+    }
+
+    .moonbounce__element.moonbounce-v2__moon-back {
+        grid-column: 2 / 8;
+        width: 100%;
+        margin-bottom: -45vh;
+        margin-left: -5vw;
+    }
+
+    .moonbounce__element.moonbounce-v2__main {
+        grid-row: 5 / 7;
+        grid-column: 1 / 13;
+        justify-self: center;
+        align-self: center;
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 10vh;
+        z-index: 3;
+    }
+
+    .moonbounce__element.moonbounce-v2__haze {
+        transform: scale(1.1);
+    }
+
+    .moonbounce__element.moonbounce-v2__flare {
+        grid-row: 9 / 11;
+        grid-column: 6 / 12;
+        justify-self: center;
+        align-self: start;
+        width: 100%;
+        margin-right: -24vw;
+        z-index: 2;
+        transform: translateY(0px);
+    }
+
+    .moonbounce__element.moonbounce-v2__free {
+        grid-row: 9 / 11;
+        grid-column: 6 / 12;
+        justify-self: center;
+        align-self: start;
+        width: 50%;
+        margin-right: -24vw;
+        z-index: 3;
+        transform: translateY(112px);
+    }
+
+    .moonbounce__element.moonbounce-v2__crescent {
+        grid-row: 9 / 11;
+        grid-column: 6 / 12;
+        justify-self: center;
+        align-self: start;
+        width: 100%;
+        margin-right: -30vw;
+        z-index: 4;
+        transform: translateY(-110px);
+    }
+
+    .moonbounce__element.moonbounce-v2__mint-text {
+        grid-row: 8 / 11;
+        grid-column: 7 / 12;
+        justify-self: start;
+        align-self: start;
+        width: 100%;
+        margin-right: -20vw;
+        z-index: 5;
+        transform: translateY(140px);
+    }
+
+    .moonbounce__element.moonbounce-v2__yellow-mint-now {
+        grid-row: 8 / 11;
+        grid-column: 8 / 12;
+        justify-self: start;
+        align-self: start;
+        width: 100%;
+        margin-right: -35vw;
+        z-index: 5;
+        transform: translateY(115px);
+    }
+
+    .moonbounce__element.moonbounce-v2__manta {
+        width: 45%;
+        transform: translateY(-510px);
+        
+    }
+
+    .moonbounce__element.moonbounce-v2__dish {
+        width: 15%;
+        transform: translateY(78px);
+        margin-left: 17vw;
+    }
+    
+    .moonbounce__element.moonbounce-v2__lightning {
+        width: 18%;
+        transform: translateY(-34px);
+        margin-left: 6vw;
+    }
+
+    .moonbounce__element.moonbounce-v2__actually {
+        width: 40%;
+        transform: translateY(-146px);
+        margin-right: -60vw;
+    }
+    
+    .moonbounce__element.moonbounce-v2__arrow {
+        width: 8%;
+        transform: translateY(-90px);
+        margin-right: -67vw;
+    }
+
+    .moonbounce__element.moonbounce-v2__title {
+        width: 80%;
+        margin-left: -15px;
+        margin-top: 130px;
+    }
+
+    .moonbounce__element.moonbounce-v2__sumerian {
+        width: 20%;
+        margin-right: 30px;
+        margin-top: 120px;
+    }
+    
+    .moonbounce__element.moonbounce-v2__finger {
+        width: 100%;
+        scale: 1.5;
+        margin-left: 0px;
+        margin-top: 270px;
+    }
+    
+    .moonbounce__element.moonbounce-v2__yellow-mint {
+        width: 99%;
+        scale: 1.1;
+        margin-right: 96px;
+        margin-top: 210px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    :root {
+        --scale-factor: 1.2;
+        --container-height: 1750px;
+    }
+    
+    .moonbounce__element.moonbounce-v2__journey {
+        width: 100%;
+        grid-column: 4 / 10;
+        margin-bottom: -13vh;
+    }
+
+    .moonbounce__element.moonbounce-v2__atrium,
+    a:has(.moonbounce-v2__atrium) {
+        grid-row: 10 / 11;
+        grid-column: 9 / 12;
+        width: 32%;
+        margin-bottom: -60%;
+        margin-right: -5vw;
+        justify-self: end;
+    }
+    
+    .moonbounce__element.moonbounce-v2__bertnership {
+        grid-row: 10 / 11;
+        grid-column: 4 / 10;
+        width: 75%;
+        justify-self: center;
+        margin-bottom: -10vh;
+        margin-right: -40vw;
+    }
+
+    .moonbounce__element.moonbounce-v2__rtn {
+        grid-column: 2 / 8;
+        width: 85%;
+        margin-bottom: -45vh;
+        margin-left: -10vw;
+    }
+
+    .moonbounce__element.moonbounce-v2__yellow-line-1 {
+        grid-column: 2 / 6;
+        width: 90%;
+        margin-bottom: 29vh;
+        margin-left: -5vw;
+    }
+
+    .moonbounce__element.moonbounce-v2__yellow-line-2 {
+        grid-column: 2 / 6;
+        width: 100%;
+        margin-bottom: -10vh;
+        margin-left: -5vw;
+    }
+
+    .moonbounce__element.moonbounce-v2__home {
+        grid-column: 2 / 6;
+        width: 100%;
+        margin-bottom: 0vh;
+        margin-left: -5vw;
+    }
+
+    .moonbounce__element.moonbounce-v2__moon-back {
+        grid-column: 2 / 6;
+        width: 100%;
+        margin-bottom: -47.3vh;
+        margin-left: -5vw;
+    }
+
+    .moonbounce__element.moonbounce-v2__beamed-up {
+        grid-column: 2 / 6;
+        width: 90%;
+        margin-bottom: -10vh;
+        margin-left: -5vw;
+    }
+
+    .moonbounce__element.moonbounce-v2__main {
+        grid-column: 2 / 12;
+        width: 90%;
+        margin-bottom: 30vh;
+        margin-left: 0;
+    }
+
+    .moonbounce__element.moonbounce-v2__haze {
+        transform: scale(1.1);
+    }
+
+    .moonbounce__element.moonbounce-v2__flare {
+        grid-row: 9 / 11;
+        grid-column: 6 / 12;
+        justify-self: center;
+        align-self: start;
+        width: 90%;
+        margin-right: -26vw;
+        z-index: 2;
+        transform: translateY(-60px);
+    }
+
+    .moonbounce__element.moonbounce-v2__free {
+        grid-row: 9 / 11;
+        grid-column: 6 / 12;
+        justify-self: center;
+        align-self: start;
+        width: 40%;
+        margin-right: -25vw;
+        z-index: 3;
+        transform: translateY(100px);
+    }
+
+    .moonbounce__element.moonbounce-v2__crescent {
+        grid-row: 9 / 11;
+        grid-column: 6 / 12;
+        justify-self: center;
+        align-self: start;
+        width: 90%;
+        margin-right: -30vw;
+        z-index: 4;
+        transform: translateY(-220px);
+    }
+
+    .moonbounce__element.moonbounce-v2__mint-text {
+        grid-row: 8 / 11;
+        grid-column: 7 / 12;
+        justify-self: start;
+        align-self: start;
+        width: 100%;
+        margin-right: -20vw;
+        z-index: 5;
+        transform: translateY(70px);
+    }
+
+    .moonbounce__element.moonbounce-v2__yellow-mint-now {
+        grid-row: 8 / 11;
+        grid-column: 8 / 12;
+        justify-self: start;
+        align-self: start;
+        width: 100%;
+        margin-right: -35vw;
+        z-index: 5;
+        transform: translateY(30px);
+    }
+
+    .moonbounce__element.moonbounce-v2__manta {
+        width: 35%;
+        transform: translateY(-630px);
+        margin-left: -4vw;
+    }
+
+    .moonbounce__element.moonbounce-v2__dish {
+        width: 10%;
+        transform: translateY(28px);
+        margin-left: 12vw;
+    }
+    
+    .moonbounce__element.moonbounce-v2__lightning {
+        width: 12%;
+        transform: translateY(-94px);
+        margin-left: 5vw;
+    }
+
+    .moonbounce__element.moonbounce-v2__actually {
+        width: 50%;
+        transform: translateY(-240px);
+        margin-right: -52vw;
+    }
+    
+    .moonbounce__element.moonbounce-v2__arrow {
+        width: 6%;
+        transform: translateY(-170px);
+        margin-right: -60vw;
+    }
+
+    .moonbounce__element.moonbounce-v2__title {
+        width: 60%;
+        margin-left: 0px;
+        margin-top: 40px;
+    }
+
+    .moonbounce__element.moonbounce-v2__sumerian {
+        width: 15%;
+        margin-right: 30px;
+        margin-top: 40px;
+    }
+    
+    .moonbounce__element.moonbounce-v2__finger {
+        width: 87%;
+        margin-left: 40px;
+        margin-top: 210px;
+    }
+    
+    .moonbounce__element.moonbounce-v2__yellow-mint {
+        width: 80%;
+        scale: 1.0;
+        margin-right: 179px;
+        margin-top: 131px;
+    }
+}
+
+@media screen and (min-width: 991px) {
+    :root {
+        --scale-factor: 1.3;
+        --container-height: 2000px;
+    }
+    
+    .moonbounce__element.moonbounce-v2__journey {
+        width: 100vw;
+        grid-column: 4 / 10;
+        margin-bottom: -15vh;
+    }
+
+    .moonbounce__element.moonbounce-v2__atrium,
+    a:has(.moonbounce-v2__atrium) {
+        grid-row: 10 / 11;
+        grid-column: 9 / 12;
+        width: 32%;
+        margin-bottom: -90%;
+        margin-right: -5vw;
+        justify-self: end;
+    }
+    
+    .moonbounce__element.moonbounce-v2__bertnership {
+        grid-column: 6 / 12;
+        grid-row: 10 / 11;
+        justify-self: end;
+        align-self: end;
+        width: 60%;
+        margin-bottom: -16vh;
+        margin-right: 0vw;
+        z-index: 2;
+    }
+
+    .moonbounce__element.moonbounce-v2__rtn {
+        grid-column: 2 / 7;
+        width: 90%;
+        margin-bottom: -55vh;
+        margin-left: -10vw;
+    }
+
+    .moonbounce__element.moonbounce-v2__yellow-line-1 {
+        grid-column: 2 / 6;
+        width: 90%;
+        margin-bottom: 31vh;
+        margin-left: -5vw;
+    }
+
+    .moonbounce__element.moonbounce-v2__yellow-line-2 {
+        grid-column: 2 / 6;
+        width: 90%;
+        margin-bottom: -16vh;
+        margin-left: -5vw;
+    }
+
+    .moonbounce__element.moonbounce-v2__home {
+        grid-column: 2 / 6;
+        width: 90%;
+        margin-bottom: -3vh;
+        margin-left: -6vw;
+    }
+
+    .moonbounce__element.moonbounce-v2__moon-back {
+        grid-column: 2 / 6;
+        width: 90%;
+        margin-bottom: -59.5vh;
+        margin-left: -5vw;
+    }
+
+    .moonbounce__element.moonbounce-v2__beamed-up {
+        grid-column: 2 / 6;
+        width: 90%;
+        margin-bottom: -14vh;
+        margin-left: -5vw;
+    }
+
+    .moonbounce__element.moonbounce-v2__main {
+        grid-column: 2 / 12;
+        width: 90%;
+        margin-bottom: 40vh;
+        margin-left: 0;
+    }
+
+    .moonbounce__element.moonbounce-v2__haze {
+        transform: scale(1.1);
+    }
+
+    .moonbounce__element.moonbounce-v2__flare {
+        grid-row: 9 / 11;
+        grid-column: 6 / 12;
+        justify-self: center;
+        align-self: start;
+        width: 100%;
+        margin-right: -24vw;
+        z-index: 2;
+        transform: translateY(-80px);
+    }
+
+    .moonbounce__element.moonbounce-v2__free {
+        grid-row: 9 / 11;
+        grid-column: 6 / 12;
+        justify-self: center;
+        align-self: start;
+        width: 30%;
+        margin-right: -30vw;
+        z-index: 3;
+        transform: translateY(168px);
+    }
+
+    .moonbounce__element.moonbounce-v2__crescent {
+        grid-row: 9 / 11;
+        grid-column: 6 / 12;
+        justify-self: center;
+        align-self: start;
+        width: 85%;
+        margin-right: -30vw;
+        z-index: 4;
+        transform: translateY(-225px);
+    }
+
+    .moonbounce__element.moonbounce-v2__mint-text {
+        grid-row: 8 / 11;
+        grid-column: 7 / 12;
+        justify-self: start;
+        align-self: start;
+        width: 100%;
+        margin-right: -15vw;
+        z-index: 5;
+        transform: translateY(125px);
+    }
+
+    .moonbounce__element.moonbounce-v2__yellow-mint-now {
+        grid-row: 8 / 11;
+        grid-column: 7 / 12;
+        justify-self: end;
+        align-self: start;
+        width: 75%;
+        margin-right: 0vw;
+        z-index: 5;
+        transform: translateY(80px);
+    }
+
+    .moonbounce__element.moonbounce-v2__manta {
+        grid-row: 10 / 12;
+        grid-column: 5 / 11;
+        width: 30%;
+        margin-right: 98vw;
+        transform: translateY(-690px);
+    }
+
+    .moonbounce__element.moonbounce-v2__dish {
+        width: 8%;
+        transform: translateY(30px);
+        margin-left: 12vw;
+    }
+    
+    .moonbounce__element.moonbounce-v2__lightning {
+        width: 12%;
+        transform: translateY(-124px);
+        margin-left: 5vw;
+    }
+
+    .moonbounce__element.moonbounce-v2__actually {
+        width: 50%;
+        transform: translateY(-240px);
+        margin-right: -52vw;
+    }
+    
+    .moonbounce__element.moonbounce-v2__arrow {
+        width: 6%;
+        transform: translateY(-170px);
+        margin-right: -60vw;
+    }
+
+    .moonbounce__element.moonbounce-v2__title {
+        width: 50%;
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+
+    .moonbounce__element.moonbounce-v2__sumerian {
+        width: 15%;
+        margin-right: 60px;
+        margin-top: -10px;
+    }
+    
+    .moonbounce__element.moonbounce-v2__finger {
+        width: 91%;
+        margin-left: 40px;
+        margin-top: 180px;
+    }
+    
+    .moonbounce__element.moonbounce-v2__yellow-mint {
+        width: 76%;
+        scale: 1.0;
+        margin-right: 239px;
+        margin-top: 82px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    :root {
+        --scale-factor: 1.4;
+        --container-height: 2250px;
+    }
+    
+    .moonbounce__element.moonbounce-v2__journey {
+        width: 100vw;
+        grid-column: 4 / 10;
+        margin-bottom: -15vh;
+    }
+
+    .moonbounce__element.moonbounce-v2__atrium,
+    a:has(.moonbounce-v2__atrium) {
+        grid-row: 10 / 11;
+        grid-column: 9 / 12;
+        width: 32%;
+        margin-bottom: -60%;
+        margin-right: -5vw;
+        justify-self: end;
+    }
+    
+    .moonbounce__element.moonbounce-v2__bertnership {
+        grid-column: 6 / 12;
+        grid-row: 10 / 11;
+        justify-self: end;
+        align-self: end;
+        width: 60%;
+        margin-bottom: -16vh;
+        margin-right: 0vw;
+        z-index: 2;
+    }
+
+    .moonbounce__element.moonbounce-v2__rtn {
+        grid-column: 2 / 7;
+        width: 90%;
+        margin-bottom: -65vh;
+        margin-left: -10vw;
+    }
+
+    .moonbounce__element.moonbounce-v2__yellow-line-1 {
+        grid-column: 2 / 6;
+        width: 90%;
+        margin-bottom: 43.5vh;
+        margin-left: -5vw;
+    }
+
+    .moonbounce__element.moonbounce-v2__yellow-line-2 {
+        grid-column: 2 / 6;
+        width: 90%;
+        margin-bottom: -14vh;
+        margin-left: -5vw;
+    }
+
+    .moonbounce__element.moonbounce-v2__home {
+        grid-column: 2 / 6;
+        width: 92%;
+        margin-bottom: -1vh;
+        margin-left: -7vw;
+    }
+
+    .moonbounce__element.moonbounce-v2__moon-back {
+        grid-column: 2 / 6;
+        width: 90%;
+        margin-bottom: -62.5vh;
+        margin-left: -5vw;
+    }
+
+    .moonbounce__element.moonbounce-v2__beamed-up {
+        grid-column: 2 / 6;
+        width: 90%;
+        margin-bottom: -7vh;
+        margin-left: -5vw;
+    }
+
+    .moonbounce__element.moonbounce-v2__main {
+        grid-column: 2 / 12;
+        justify-self: center;
+        width: 70%;
+        margin-bottom: 60vh;
+        margin-left: 0;
+    }
+
+    .moonbounce__element.moonbounce-v2__haze {
+        transform: scale(1.1);
+    }
+
+    .moonbounce__element.moonbounce-v2__flare {
+        grid-row: 9 / 11;
+        grid-column: 6 / 12;
+        justify-self: center;
+        align-self: start;
+        width: 100%;
+        margin-right: -24vw;
+        z-index: 2;
+        transform: translateY(-170px);
+    }
+
+    .moonbounce__element.moonbounce-v2__free {
+        grid-row: 9 / 11;
+        grid-column: 6 / 12;
+        justify-self: center;
+        align-self: start;
+        width: 28%;
+        margin-right: -28vw;
+        z-index: 3;
+        transform: translateY(145px);
+    }
+
+    .moonbounce__element.moonbounce-v2__crescent {
+        grid-row: 9 / 11;
+        grid-column: 6 / 12;
+        justify-self: center;
+        align-self: start;
+        width: 80%;
+        margin-right: -28vw;
+        z-index: 4;
+        transform: translateY(-330px);
+    }
+
+    .moonbounce__element.moonbounce-v2__mint-text {
+        grid-row: 8 / 11;
+        grid-column: 6 / 12;
+        justify-self: start;
+        align-self: start;
+        width: 95%;
+        margin-right: -12vw;
+        z-index: 5;
+        transform: translateY(100px);
+    }
+
+    .moonbounce__element.moonbounce-v2__yellow-mint-now {
+        grid-row: 7 / 11;
+        grid-column: 7 / 12;
+        justify-self: end;
+        align-self: start;
+        width: 95%;
+        margin-right: 2vw;
+        z-index: 5;
+        transform: translateY(200px);
+    }
+
+    .moonbounce__element.moonbounce-v2__manta {
+        grid-row: 10 / 12;
+        grid-column: 5 / 11;
+        width: 30%;
+        margin-right: 98vw;
+        transform: translateY(-870px);
+    }
+
+    .moonbounce__element.moonbounce-v2__dish {
+        width: 8%;
+        transform: translateY(-45px);
+        margin-left: 10vw;
+    }
+    
+    .moonbounce__element.moonbounce-v2__lightning {
+        width: 10%;
+        transform: translateY(-205px);
+        margin-left: 4vw;
+    }
+
+    .moonbounce__element.moonbounce-v2__actually {
+        width: 45%;
+        transform: translateY(-370px);
+        margin-right: -55vw;
+    }
+    
+    .moonbounce__element.moonbounce-v2__arrow {
+        width: 6%;
+        transform: translateY(-240px);
+        margin-right: -62vw;
+    }
+
+    .moonbounce__element.moonbounce-v2__title {
+        width: 45%;
+        margin-left: 60px;
+        margin-top:35px;
+    }
+
+    .moonbounce__element.moonbounce-v2__sumerian {
+        width: 15%;
+        margin-right: 60px;
+        margin-top: -10px;
+    }
+    
+    .moonbounce__element.moonbounce-v2__finger {
+        width: 98%;
+        margin-left: 40px;
+        margin-top: 150px;
+    }
+    
+    .moonbounce__element.moonbounce-v2__yellow-mint {
+        width: 60%;
+        scale: 1.0;
+        margin-right: 349px;
+        margin-top: 83px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    :root {
+        --scale-factor: 1.5;
+        --container-height: 2500px;
+    }
+    
+    .moonbounce__element.moonbounce-v2__journey {
+        width: 100vw;
+        grid-column: 4 / 10;
+        margin-bottom: -15vh;
+    }
+
+    .moonbounce__element.moonbounce-v2__atrium,
+    a:has(.moonbounce-v2__atrium) {
+        grid-row: 10 / 11;
+        grid-column: 9 / 12;
+        width: 32%;
+        margin-bottom: -50%;
+        margin-right: -5vw;
+        justify-self: end;
+    }
+    
+    .moonbounce__element.moonbounce-v2__bertnership {
+        grid-column: 6 / 12;
+        grid-row: 10 / 11;
+        justify-self: end;
+        align-self: end;
+        width: 60%;
+        margin-bottom: -16vh;
+        margin-right: 0vw;
+        z-index: 2;
+    }
+
+    .moonbounce__element.moonbounce-v2__rtn {
+        grid-column: 2 / 7;
+        width: 90%;
+        margin-bottom: -65vh;
+        margin-left: -10vw;
+    }
+
+    .moonbounce__element.moonbounce-v2__yellow-line-1 {
+        grid-column: 2 / 6;
+        width: 90%;
+        margin-bottom: 44vh;
+        margin-left: -5vw;
+    }
+
+    .moonbounce__element.moonbounce-v2__yellow-line-2 {
+        grid-column: 2 / 6;
+        width: 90%;
+        margin-bottom: -10vh;
+        margin-left: -5vw;
+    }
+
+    .moonbounce__element.moonbounce-v2__home {
+        grid-column: 2 / 6;
+        width: 93%;
+        margin-bottom: -5vh;
+        margin-left: -7vw;
+    }
+
+    .moonbounce__element.moonbounce-v2__moon-back {
+        grid-column: 2 / 6;
+        width: 90%;
+        margin-bottom: -63vh;
+        margin-left: -5vw;
+    }
+
+    .moonbounce__element.moonbounce-v2__beamed-up {
+        grid-column: 2 / 6;
+        width: 90%;
+        margin-bottom: -11.8vh;
+        margin-left: -5vw;
+    }
+
+    .moonbounce__element.moonbounce-v2__main {
+        grid-column: 2 / 12;
+        justify-self: center;
+        width: 70%;
+        margin-bottom: 60vh;
+        margin-left: 0;
+    }
+
+    .moonbounce__element.moonbounce-v2__haze {
+        transform: scale(1.1);
+    }
+
+    .moonbounce__element.moonbounce-v2__flare {
+        grid-row: 9 / 11;
+        grid-column: 6 / 12;
+        justify-self: center;
+        align-self: start;
+        width: 100%;
+        margin-right: -24vw;
+        z-index: 2;
+        transform: translateY(-200px);
+    }
+
+    .moonbounce__element.moonbounce-v2__free {
+        grid-row: 9 / 11;
+        grid-column: 6 / 12;
+        justify-self: center;
+        align-self: start;
+        width: 26%;
+        margin-right: -32vw;
+        z-index: 3;
+        transform: translateY(155px);
+    }
+
+    .moonbounce__element.moonbounce-v2__crescent {
+        grid-row: 9 / 11;
+        grid-column: 6 / 12;
+        justify-self: center;
+        align-self: start;
+        width: 75%;
+        margin-right: -32vw;
+        z-index: 4;
+        transform: translateY(-350px);
+    }
+
+    .moonbounce__element.moonbounce-v2__mint-text {
+        grid-row: 8 / 11;
+        grid-column: 6 / 12;
+        justify-self: start;
+        align-self: start;
+        width: 95%;
+        margin-right: -12vw;
+        z-index: 5;
+        transform: translateY(95px);
+    }
+
+    .moonbounce__element.moonbounce-v2__yellow-mint-now {
+        grid-row: 7 / 11;
+        grid-column: 7 / 12;
+        justify-self: end;
+        align-self: start;
+        width: 90%;
+        margin-right: 2vw;
+        z-index: 5;
+        transform: translateY(225px);
+    }
+
+    .moonbounce__element.moonbounce-v2__manta {
+        grid-row: 10 / 12;
+        grid-column: 5 / 11;
+        width: 30%;
+        margin-right: 98vw;
+        transform: translateY(-970px);
+    }
+
+    .moonbounce__element.moonbounce-v2__dish {
+        width: 8%;
+        transform: translateY(-30px);
+        margin-left: 10vw;
+    }
+    
+    .moonbounce__element.moonbounce-v2__lightning {
+        width: 10%;
+        transform: translateY(-200px);
+        margin-left: 4vw;
+    }
+
+    .moonbounce__element.moonbounce-v2__actually {
+        width: 45%;
+        transform: translateY(-370px);
+        margin-right: -55vw;
+    }
+    
+    .moonbounce__element.moonbounce-v2__arrow {
+        width: 6%;
+        transform: translateY(-230px);
+        margin-right: -62vw;
+    }
+
+    .moonbounce__element.moonbounce-v2__title {
+        width: 40%;
+        margin-left: 70px;
+        margin-top:70px;
+    }
+
+    .moonbounce__element.moonbounce-v2__sumerian {
+        width: 15%;
+        margin-right: 120px;
+    }
+    
+    .moonbounce__element.moonbounce-v2__finger {
+        width: 98%;
+        margin-left: 40px;
+        margin-top: 190px;
+    }
+    
+    .moonbounce__element.moonbounce-v2__yellow-mint {
+        width: 60%;
+        scale: 1.0;
+        margin-right: 394px;
+        margin-top: 104px;
+    }
+}
+
+@media screen and (min-width: 1701px) {
+    :root {
+        --scale-factor: 1.6;
+        --container-height: 2750px;
+    }
+    
+    .moonbounce__element.moonbounce-v2__journey {
+        width: 100vw;
+        grid-column: 4 / 10;
+        margin-bottom: -15vh;
+    }
+
+    .moonbounce__element.moonbounce-v2__atrium,
+    a:has(.moonbounce-v2__atrium) {
+        grid-row: 10 / 11;
+        grid-column: 9 / 12;
+        width: 32%;
+        margin-bottom: -100%;
+        margin-right: -5vw;
+        justify-self: end;
+    }
+    
+    .moonbounce__element.moonbounce-v2__bertnership {
+        grid-column: 6 / 12;
+        grid-row: 10 / 11;
+        justify-self: end;
+        align-self: end;
+        width: 60%;
+        margin-bottom: -16vh;
+        margin-right: 0vw;
+        z-index: 2;
+    }
+
+    .moonbounce__element.moonbounce-v2__rtn {
+        grid-column: 2 / 7;
+        width: 90%;
+        margin-bottom: -55vh;
+        margin-left: -10vw;
+    }
+
+    .moonbounce__element.moonbounce-v2__yellow-line-1 {
+        grid-column: 2 / 6;
+        width: 90%;
+        margin-bottom: 20vh;
+        margin-left: -5vw;
+    }
+
+    .moonbounce__element.moonbounce-v2__yellow-line-2 {
+        grid-column: 2 / 6;
+        width: 90%;
+        margin-bottom: -16vh;
+        margin-left: -5vw;
+    }
+
+    .moonbounce__element.moonbounce-v2__home {
+        grid-column: 2 / 6;
+        width: 90%;
+        margin-bottom: -15vh;
+        margin-left: -6vw;
+    }
+
+    .moonbounce__element.moonbounce-v2__moon-back {
+        grid-column: 2 / 6;
+        width: 90%;
+        margin-bottom: -59.5vh;
+        margin-left: -5vw;
+    }
+
+    .moonbounce__element.moonbounce-v2__beamed-up {
+        grid-column: 2 / 6;
+        width: 90%;
+        margin-bottom: -25vh;
+        margin-left: -5vw;
+    }
+
+    .moonbounce__element.moonbounce-v2__main {
+        grid-column: 2 / 12;
+        width: 90%;
+        margin-bottom: -19.44vh;
+        margin-left: 0;
+    }
+
+    .moonbounce__element.moonbounce-v2__haze {
+        transform: scale(1.1);
+    }
+
+    .moonbounce__element.moonbounce-v2__flare {
+        grid-row: 9 / 11;
+        grid-column: 6 / 12;
+        justify-self: center;
+        align-self: start;
+        width: 100%;
+        margin-right: -24vw;
+        z-index: 2;
+        transform: translateY(10px);
+    }
+
+    .moonbounce__element.moonbounce-v2__free {
+        grid-row: 9 / 11;
+        grid-column: 6 / 12;
+        justify-self: center;
+        align-self: start;
+        width: 30%;
+        margin-right: -35vw;
+        z-index: 3;
+        transform: translateY(160px);
+    }
+
+    .moonbounce__element.moonbounce-v2__crescent {
+        grid-row: 9 / 11;
+        grid-column: 6 / 12;
+        justify-self: center;
+        align-self: start;
+        width: 30%;
+        margin-right: -24vw;
+        z-index: 4;
+        transform: translateY(10px);
+    }
+
+    .moonbounce__element.moonbounce-v2__mint-text {
+        grid-row: 8 / 11;
+        grid-column: 7 / 12;
+        justify-self: start;
+        align-self: start;
+        width: 100%;
+        margin-right: -20vw;
+        z-index: 5;
+        transform: translateY(140px);
+    }
+
+    .moonbounce__element.moonbounce-v2__yellow-mint-now {
+        grid-row: 8 / 11;
+        grid-column: 8 / 12;
+        justify-self: start;
+        align-self: start;
+        width: 100%;
+        margin-right: -35vw;
+        z-index: 5;
+        transform: translateY(115px);
+    }
+
+    .moonbounce__element.moonbounce-v2__manta {
+        grid-row: 10 / 12;
+        grid-column: 5 / 11;
+        width: 30%;
+        margin-right: 98vw;
+        transform: translateY(-970px);
+    }
+
+    .moonbounce__element.moonbounce-v2__dish {
+        width: 25%;
+        transform: translateY(130px);
+        margin-left: 32vw;
+    }
+    
+    .moonbounce__element.moonbounce-v2__lightning {
+        width: 10%;
+        transform: translateY(-200px);
+        margin-left: 4vw;
+    }
+
+    .moonbounce__element.moonbounce-v2__actually {
+        width: 30%;
+        transform: translateY(-146px);
+        margin-right: -60vw;
+    }
+    
+    .moonbounce__element.moonbounce-v2__arrow {
+        width: 6%;
+        transform: translateY(-90px);
+        margin-right: -67vw;
+    }
+
+    .moonbounce__element.moonbounce-v2__title {
+        width: 35%;
+        margin-left: 80px;
+        margin-top: 80px;
+    }
+
+    .moonbounce__element.moonbounce-v2__sumerian {
+        width: 20%;
+        margin-right: 80px;
+    }
+    
+    .moonbounce__element.moonbounce-v2__finger {
+        width: 98%;
+        margin-left: 40px;
+        margin-top: 150px;
+    }
+    
+    .moonbounce__element.moonbounce-v2__yellow-mint {
+        width: 16%;
+        margin-right: 80px;
+    }
+}
+
